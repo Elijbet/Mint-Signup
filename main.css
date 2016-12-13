@@ -28,7 +28,7 @@ section .form-wrapper {
     display: inline-block;
     margin-right: 82px;
     box-sizing: border-box;
-    vertical-align: top
+    vertical-align: top;
 
 }
 section .info {
@@ -39,7 +39,7 @@ section .info {
     border-left: 1px solid lightgrey;
     display: inline-block;
     box-sizing: border-box;
-    vertical-align: top
+    vertical-align: top;
 }
 
 }
@@ -94,7 +94,62 @@ h3 {
 	font-weight: 500;
 	line-height: 15.4px;
 }
+#Logo {
+    width: 150px;
+    float: left;
+    vertical-align: baseline;
+    display: inline-block;
+}
 
+
+#authenitcation {
+    margin: 5% 0 0 80%;
+    vertical-align: bottom;
+
+}
+
+ul li {
+    display: inline;
+    text-align: right;
+    list-style-type: none;
+    vertical-align: bottom;
+}
+
+.cf {
+        *zoom: 1
+
+    &:before,
+    &:after
+        content: “”
+        display: table
+    &:after
+        clear: both
+}
+
+/* unvisited link */
+a {
+    color: grey;
+        text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
+h6 {
+    display: inline;
+}
+#bottom-links {
+    width: 785px;
+    text-align: justify;
+
+
+}
+.centered {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+}
 /* {
    border: 1px solid red !important;
 }*/
