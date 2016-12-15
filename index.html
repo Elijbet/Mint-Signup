@@ -3,18 +3,17 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Antic" />
+<link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet">
     <title>Mint Form Odin Project</title>
 </head>
 
 <body>
     <header>
         <img class="cf" src="images/Mint-Logo.png" alt="Logo" id="Logo">
-        <ul id="authenitcation">        
-        <li href=""><strong>Sign up</strong></a>
-        <li href="">| Log in</a>
-        </ul>
-
+            <div id="authentication">        
+                <a href=""><strong>Sign up</strong></a>
+                <a href="">| Log in</a>
+            </div>
     </header>
     <section>
         <div class="form-wrapper">
@@ -25,20 +24,23 @@
                     <input type="email" name="email" id="email" value required>
                 </fieldset>
                 <fieldset>
-                    <label for="email-confirm">Confirm Email</label></br>
+                    <label for="email-confirm">Confirm Email</label><br>
                     <input type="email" name="email" id="email-confirm">
                 </fieldset>
                 <fieldset>
-                    <label for="password">Password</label></br>
+                    <label for="password">Password</label><br>
                     <input type="text" name="password">
                 </fieldset>
                 <fieldset>
-                    <label for="password-confirm">Confirm Password</label></br>
+                    <label for="password-confirm">Confirm Password</label><br>
                     <input type="text" name="password">
                 </fieldset>
-                <input type="checkbox" name="remember">Remember Me.
-                <input type="submit" value="Submit">
-                <p>By clicking Sign Up you agree to our <a href="">Terms of Use</a> and <a href="">Privacy Statement</a></p>
+                <fieldset>
+                    <input type="checkbox" name="remember">Remember Me.
+                <input type="submit" value="sign up" id="button">
+                <h4>By clicking Sign Up you agree to our <a href="">Terms of Use</a> and <a href="">Privacy Statement</a></h4>
+                </fieldset>
+                
             </form>
         </div>
         <div class="info">
@@ -52,12 +54,16 @@
         </div>
     </section>
     <footer>
-    <div id="bottom-links" class="centered">
-        <a href="">Support</a><h6> | </h6>
-        <a href="">Terms of Use</a><h6> | </h6>
-        <a href="">Privacy</a><h6> | </h6>
-        <a href="">Legal and Trademark Notices</a><h6> | </h6>
-        <a href="">About Intuit</a>
+        <div id="bottom-links">
+            <a href="" class="grey">Support</a>
+       
+            <a href="" class="grey">Terms of Use</a>
+     
+            <a href="" class="grey">Privacy</a>
+    
+            <a href="" class="grey">Legal and Trademark Notices</a>
+    
+            <a href="" class="grey">About Intuit</a>
         </div>
     </footer>
 </body>

@@ -29,8 +29,8 @@ section .form-wrapper {
     margin-right: 82px;
     box-sizing: border-box;
     vertical-align: top;
-
 }
+
 section .info {
     width: 210px;
     height: 620px;
@@ -42,30 +42,27 @@ section .info {
     vertical-align: top;
 }
 
-}
 
+}
 form {
-	display: block;
-	width: ;
+    display: block;
+    width: ;
 }
-
 input {
     width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
-
-input[type="checkbox"] { 
+input[type="checkbox"] {
     width: 10%;
     box-sizing: border-box;
-
 }
 fieldset {
-	display: block;
-	 border: 0;
-   margin: 0;
-   padding: 0;
+    display: block;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 input {
     box-shadow: none;
@@ -73,26 +70,46 @@ input {
     border: 1px solid #d8d8d8;
 }
 label {
-	  font-size: 14px !important;
+    font-size: 14px !important;
     font-weight: normal !important;
-    font-family: "Antic", "Helvetica Neue";
+    font-family: 'Nunito', sans-serif;
     margin-bottom: 10px;
+    line-height: 35px;
 }
 h1 {
-	font-family: "Antic";
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 35px;
 }
-h3 {
-	font-family: "Antic";
-	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 15.4px;
+h3  {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 35px;
+
+}
+
+h4  {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 35px;
+    color: grey;
+}
+input, fieldset, #bottom-links, #authentication {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 15.4px;
 }
 #Logo {
     width: 150px;
@@ -100,37 +117,26 @@ h3 {
     vertical-align: baseline;
     display: inline-block;
 }
-
-
-#authenitcation {
-    margin: 5% 0 0 80%;
+#authentication {
+    margin: 5% 0 0 85%;
     vertical-align: bottom;
-
 }
-
 ul li {
     display: inline;
     text-align: right;
     list-style-type: none;
     vertical-align: bottom;
 }
-
 .cf {
-        *zoom: 1
-
-    &:before,
-    &:after
-        content: “”
-        display: table
-    &:after
-        clear: both
+    *zoom: 1 &:before, &:after content: “” display: table &:after clear: both
 }
 
 /* unvisited link */
 a {
-    color: grey;
-        text-decoration: none;
+    color: #45cae6;
+    text-decoration: none;
 }
+
 /* mouse over link */
 a:hover {
     color: hotpink;
@@ -141,14 +147,39 @@ h6 {
 }
 #bottom-links {
     width: 785px;
-    text-align: justify;
-
+    position: absolute;  
+    top: 10%;
+    left: 25%;
 
 }
-.centered {
-  position: fixed; /* or absolute */
-  top: 50%;
-  left: 50%;
+footer {
+    position: relative;
+}
+a.grey {
+    color: grey;
+    font-size: 12px;
+}
+a.grey:after {
+    content: "|";
+    margin: 0 28px;
+}
+a.grey:last-child:after {
+    content: "";
+}
+.small {
+    line-height: 35px;
+}
+#button {
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #45cae6;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 5px 15px;
+    width: 100px;
+    display: block;
 }
 /* {
    border: 1px solid red !important;
