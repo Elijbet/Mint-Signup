@@ -23,7 +23,7 @@ footer {
 }
 
 section .form-wrapper {
-    width: 400px;
+    width: 360px;
     height: 620px;
     display: inline-block;
     margin-right: 82px;
@@ -32,16 +32,24 @@ section .form-wrapper {
 }
 
 section .info {
-    width: 210px;
-    height: 620px;
-    margin-bottom: 40px;
-    padding-left: 25px;
-    border-left: 1px solid lightgrey;
+    width: 180px;
+    height: 593px;
     display: inline-block;
-    box-sizing: border-box;
+    margin: 0 27px 0 27px;
+    background: #f5f5f5;
+    color: #666;
     vertical-align: top;
-}
 
+}
+.border-line {
+    margin-right: 1px;
+    padding: 1px;
+    width: 20px;
+    height: 593px;
+    border-right: solid 1px;
+    border-color: lightgrey;
+    vertical-align: top;
+    display: inline-block;
 
 }
 form {
@@ -81,8 +89,17 @@ h1 {
     font-size: 24px;
     font-style: normal;
     font-variant: normal;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 35px;
+}
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 35px;
+    text-align: center;
 }
 h3  {
     font-family: 'Nunito', sans-serif;
@@ -103,6 +120,15 @@ h4  {
     line-height: 35px;
     color: grey;
 }
+.info h4  {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 15.4px;
+    color: grey;
+}
 input, fieldset, #bottom-links, #authentication {
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
@@ -118,14 +144,12 @@ input, fieldset, #bottom-links, #authentication {
     display: inline-block;
 }
 #authentication {
-    margin: 5% 0 0 85%;
+    margin: 5% 0 0 82%;
     vertical-align: bottom;
 }
 ul li {
-    display: inline;
-    text-align: right;
-    list-style-type: none;
-    vertical-align: bottom;
+    text-align: left;
+    list-style-type: disc;
 }
 .cf {
     *zoom: 1 &:before, &:after content: “” display: table &:after clear: both
@@ -155,16 +179,28 @@ h6 {
 footer {
     position: relative;
 }
-a.grey {
+a.grey-small {
     color: grey;
     font-size: 12px;
 }
-a.grey:after {
+a.grey-small:after {
     content: "|";
     margin: 0 28px;
 }
+a.grey-small:last-child:after {
+    content: "";
+}
+a.grey {
+    color: grey;
+    font-size: 14px;
+}
+a.grey:after {
+    content: "|";
+    margin: 0 14px;
+}
 a.grey:last-child:after {
     content: "";
+    margin: 0;
 }
 .small {
     line-height: 35px;
@@ -180,6 +216,13 @@ a.grey:last-child:after {
     padding: 5px 15px;
     width: 100px;
     display: block;
+}
+#seal {
+    display: inline-block;
+    margin: 0 15px;
+}
+#seal-container {
+    margin: 80px 0 20px 20px;
 }
 /* {
    border: 1px solid red !important;
